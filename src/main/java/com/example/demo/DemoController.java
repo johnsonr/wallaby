@@ -1,9 +1,15 @@
+/*
+ * Copyright BigCorp. All rights reserved.
+ * See the BigCorp license agreement in the root directory of this project.
+ */
+
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// This is a Spring MVC controller
 @RestController
 class DemoController {
 
@@ -14,6 +20,8 @@ class DemoController {
     public Person person(@PathVariable String name) {
         return new Person(name);
     }
+
+    // Junior developers: Add your endpoints here
 
 }
 
@@ -29,4 +37,3 @@ class Person {
         this.name = name;
     }
 }
-
